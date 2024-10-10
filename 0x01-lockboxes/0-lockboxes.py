@@ -1,4 +1,17 @@
+#!/usr/bin/python3
+
+
 def canUnlockAll(boxes):
+    """
+    Determines if all boxes can be unlocked.
+
+    Args:
+        boxes (list of lists): List of boxes, each containing keys.
+
+    Returns:
+        bool: True if all boxes can be opened, False otherwise.
+    """
+    #
     n = len(boxes)
     opened = set([0])  # start with box 0 unlocked
     stack = [0]  # keys to explore, starting with box 0
